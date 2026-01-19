@@ -149,6 +149,22 @@ cd task-list-app
 npm install
 npm run dev
 ```
+---
+
+## 🔑 Demo Credentials
+
+Admin Login  
+Email: admin@example.com  
+Password: 123  
+
+Employee 1 Login  
+Email: employee1@example.com  
+Password: 123
+
+> Note: This project uses localStorage. Demo data is seeded to localStorage on clicking 'Use Seed Data ( Demo )' button.
+> Note: There are 5 employees having Email: employee{number}@example.com and Password: 123. Number goes from 1-5. 
+
+---
 
 ## 👤 Author
 
