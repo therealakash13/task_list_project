@@ -1,5 +1,6 @@
 import { useContext, useState } from "react";
 import { AuthContext } from "../../context/AuthContext";
+import { setLocalStorage } from "../../utils/LocalStorage";
 
 export default function LoginForm() {
   const [email, setEmail] = useState("");
@@ -37,6 +38,15 @@ export default function LoginForm() {
           className="bg-red-500 py-1 rounded text-2xl font-medium cursor-pointer hover:bg-red-400 transition mt-4"
         >
           Login
+        </button>
+        <button
+          onClick={() => {
+            setLocalStorage();
+            window.location.reload(); 
+          }}
+          className="bg-green-700 py-1 px-5 rounded text-2xl font-medium cursor-pointer hover:bg-green-800 transition mt-2"
+        >
+          Use Seed Data ( Demo )
         </button>
       </form>
     </div>
